@@ -8,13 +8,16 @@ A beautiful, functional, and responsive to-do list application built with vanill
 ## ✨ Features
 
 - ✅ **Add, Complete, and Delete Tasks** - Full CRUD functionality
-- 🎨 **Premium Design** - Glassmorphism effects with smooth animations
-- 💾 **Local Storage** - Tasks persist across browser sessions
+- ⏰ **Due Dates & Times** - Set when tasks should be completed
+- 🔔 **Smart Reminders** - Browser notifications (At time, 5/15/30 mins before)
+- ⚠️ **Overdue Detection** - Automatic highlighting of past-due tasks
+- 🎨 **Color-Coded Urgency** - Visual indicators (Green → Yellow → Red)
+- 🔍 **Advanced Filtering** - All, Overdue, Today, This Week, Completed
+- 📊 **Enhanced Statistics** - Track Total, Overdue, and Done tasks
+- 💾 **Local Storage** - Tasks and times persist across browser sessions
 - 📱 **Fully Responsive** - Works on desktop, tablet, and mobile
-- 🔍 **Filter Tasks** - View All or Completed tasks
-- 📊 **Real-time Statistics** - Track total and completed tasks
 - ⌨️ **Keyboard Shortcuts** - Enhanced productivity
-- 🎭 **Smooth Animations** - Delightful micro-interactions
+- 🎭 **Premium Design** - Glassmorphism effects with smooth animations
 
 ## 🚀 Demo
 
