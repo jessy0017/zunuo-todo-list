@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern, functional to-do list application to organize your tasks efficiently">
+    <meta name="keywords" content="todo, task manager, productivity, organizer">
+    <title>Zunuo - Modern To-Do List</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1 class="app-title">Zunuo</h1>
+                <p class="app-subtitle">Organize your life, one task at a time</p>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-value" id="total-tasks">0</span>
+                    <span class="stat-label">Total</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="completed-tasks">0</span>
+                    <span class="stat-label">Done</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Add Task Section -->
+        <div class="add-task-section">
+            <form id="task-form" class="task-form">
+                <div class="input-wrapper">
+                    <input type="text" id="task-input" class="task-input" placeholder="What needs to be done?"
+                        autocomplete="off" required>
+                    <button type="submit" id="add-task-btn" class="add-task-btn">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <span>Add Task</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Task List Section -->
+        <div class="task-list-container">
+            <div class="task-list-header">
+                <h2 class="section-title">Your Tasks</h2>
+                <button id="clear-completed-btn" class="clear-btn">Clear Completed</button>
+            </div>
+
+            <ul id="task-list" class="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+
+            <!-- Empty State -->
+            <div id="empty-state" class="empty-state">
+                <svg class="empty-icon" width="120" height="120" viewBox="0 0 120 120" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="50" stroke="url(#gradient)" stroke-width="2" stroke-dasharray="4 4" />
+                    <path d="M60 40V80M40 60H80" stroke="url(#gradient)" stroke-width="3" stroke-linecap="round" />
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="120" y2="120">
+                            <stop offset="0%" stop-color="#4F46E5" />
+                            <stop offset="100%" stop-color="#7C3AED" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <h3 class="empty-title">No tasks yet</h3>
+                <p class="empty-text">Add your first task to get started!</p>
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+            <button class="filter-btn" data-filter="completed" id="filter-completed">Completed</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

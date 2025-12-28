@@ -1,0 +1,29 @@
+# Zunuo To-Do List - Ignore unnecessary files
+
+# Dependencies (if any are added in the future)
+node_modules/
+package-lock.json
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+
+# Build outputs (if build process is added)
+dist/
+build/
